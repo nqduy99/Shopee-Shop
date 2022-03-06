@@ -4,6 +4,10 @@
     --black-color: #000;
     --white-color: #fff;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 49px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -44,6 +48,16 @@ html {
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 /* Modal CSS */
 .modal {
     position: fixed;
@@ -52,6 +66,7 @@ html {
     bottom: 0;
     left: 0; 
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -62,14 +77,17 @@ html {
 }
 
 .modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin: auto;
     position: relative;
     z-index: 1;
+    animation: growth linear 0.1s;
 }
 
 /* Button style */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -82,6 +100,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.6rem;
 }
 
 .btn.btn--normal:hover {
