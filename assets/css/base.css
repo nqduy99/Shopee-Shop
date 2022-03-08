@@ -175,18 +175,6 @@ html {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-.select-input__label {
-
-}
-
-.select-input__icon {
-
-}
-
-.select-input__item {
-
-}
-
 .select-input__link {
     font-size: 1.4rem;
     color: var(--text-color);

@@ -307,7 +307,6 @@
     display: flex;
     padding: 12px;
     text-decoration: none;
-
 }
 
 .header__notify-img {
@@ -333,9 +332,6 @@
     line-height: 1.6rem;
     color: #756f6e;
     margin-top: 4px;
-}
-
-.header__notify-footer {
 }
 
 .header__notify-footer-btn {
@@ -1025,9 +1021,6 @@
 }
 
 /* Mobile Category */
-.mobile-category {
-
-}
 
 .mobile-category__list {
     display: none;
@@ -1264,10 +1257,6 @@ i.home-product-item__like-icon-fill {
     color: #595959;
     font-size: 1.2rem;
     font-weight: 300;
-}
-
-.home-product-item__brand {
-
 }
 
 .home-product-item__origin-name {
